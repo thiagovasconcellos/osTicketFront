@@ -1,27 +1,26 @@
-import React, { Component } from "react";
+/* eslint-disable react/state-in-constructor */
+import React, { Component } from 'react';
 
-import api from "../../services/api";
+import api from '../../services/api';
 
-import Container from "../../components/Container";
-import { Title, Table, Department, Status, Count } from "./styles";
+import Container from '../../components/Container';
+import { Title, Table, Department, Status, Count } from './styles';
 
 export default class Home extends Component {
   state = {
-    tickets: []
+    tickets: [],
   };
 
   async componentDidMount() {
-    //get api
-    const response = await api.get("/tickets/position");
+    const response = await api.get('/tickets/position');
     this.setState({
-      tickets: response.data
+      tickets: response.data,
     });
-    console.log(response);
   }
 
-  componentDidUpdate(_, prevState) {
-    // update api
-  }
+  // componentDidUpdate(_, prevState) {
+  //   // update api
+  // }
 
   render() {
     const { tickets } = this.state;
