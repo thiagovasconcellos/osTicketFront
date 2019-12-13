@@ -3,11 +3,6 @@
 import React, { Component } from 'react';
 import 'bootstrap/dist/css/bootstrap.min.css';
 import { FaSpinner, FaMedal } from 'react-icons/fa';
-import {
-  MdSentimentDissatisfied,
-  MdSentimentNeutral,
-  MdSentimentSatisfied,
-} from 'react-icons/md';
 import api from '../../services/api';
 import Container from '../../components/Container';
 import { Div, Loading, TicketsStyles } from './styles';
