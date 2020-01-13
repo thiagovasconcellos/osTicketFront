@@ -19,6 +19,16 @@ const handleStatus = status => {
   }
 };
 
+export const Header = styled.header`
+  flex: 1;
+`;
+
+export const Image = styled.image`
+  display: flex;
+  flex: 1;
+  justify-content: center;
+`;
+
 export const Div = styled.header`
   display: flex;
   flex-direction: row;
@@ -64,5 +74,35 @@ export const TicketsStyles = styled.header`
 
   strong {
     text-align: center;
+  }
+`;
+
+export const Finishs = styled.header`
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  width: 100%;
+  font-size: 24px;
+  text-align: center;
+  ${({ status }) => handleStatus(status)};
+
+  strong {
+    justify-content: space-between;
+  }
+
+  small {
+    color: #ddd;
+    font-size: 12px;
+  }
+`;
+
+export const Button = styled.div`
+  display: flex;
+  flex: 1;
+  justify-content: flex-end;
+
+  &:hover {
+    color: #ff0000;
+    cursor: pointer;
   }
 `;

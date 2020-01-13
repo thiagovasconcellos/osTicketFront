@@ -24,4 +24,13 @@ export default createGlobalStyle`
   button {
     cursor: pointer;
   }
+  ::backdrop {
+    z-index:0;  
+    background-color: white !important;
+}
+
+  html, *:fullscreen, *:-webkit-full-screen, *:-moz-full-screen {
+    background-color: white !important;
+    z-index:1;
+}
 `;

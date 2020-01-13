@@ -22,7 +22,7 @@ const handleStatus = status => {
 const Container = styled.div`
   justify-content: space-between;
   ${({ status }) => handleStatus(status)};
-  border-radius: 48px;
+  border-radius: 26px;
   padding: 30px;
   margin: 10px 10px auto;
   display: flex;
