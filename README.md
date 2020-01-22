@@ -23,7 +23,7 @@ Esse projeto contém uma rota funcional para exibição. Há a intenção de cri
 
 ## Built with
 
-<img src="https://upload.wikimedia.org/wikipedia/commons/thumb/a/a7/React-icon.svg/1200px-React-icon.svg.png" width=68 height=68 title="ReactJS" alt="ReactJS"> </img>
+<img src="https://upload.wikimedia.org/wikipedia/commons/thumb/a/a7/React-icon.svg/1200px-React-icon.svg.png" width=88 height=68 title="ReactJS" alt="ReactJS"> </img>
 
 ## Autor
 
